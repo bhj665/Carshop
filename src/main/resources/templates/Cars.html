@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
-<title>Cars</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Cars</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
+
 <body>
-<h1>Cars</h1>
-<table>
-<tr>
-<th>Register number</th>
-<th>Manufacturer</th>
-<th>Color</th>
-<th>Fuel type</th>
-<th>Year</th>
-<th>Price</th>
-<th>Owner</th>
-<th>Seller</th>
-</tr>
-<tr th:each="car : ${cars}">
-<td th:text="${car.registernumber}"></td>
-<td th:text="${car.manufacturer}"></td>
-<td th:text="${car.color}"></td>
-<td th:text="${car.fueltype}"></td>
-<td th:text="${car.year}"></td>
-<td th:text="${car.price}"></td>
-<td th:text="${car.customer}"></td>
-<td th:text="${car.worker}"></td>
-<button>Delete car</button>
-</tr>
-</table>
+    <h1>Cars</h1>
+    <table>
+        <tr>
+            <th>Register number</th>
+            <th>Manufacturer</th>
+            <th>Color</th>
+            <th>Fuel type</th>
+            <th>Year</th>
+            <th>Price</th>
+            <th>Owner</th>
+            <th>Seller</th>
+        </tr>
+        <tr th:each="car : ${cars}">
+            <td th:text="${car.registernumber}"></td>
+            <td th:text="${car.manufacturer}"></td>
+            <td th:text="${car.color}"></td>
+            <td th:text="${car.fueltype}"></td>
+            <td th:text="${car.year}"></td>
+            <td th:text="${car.price}"></td>
+            <td th:text="${car.customer}"></td>
+            <td th:text="${car.worker}"></td>
+            <button>Delete car</button>
+        </tr>
+    </table>
 </body>
+
 </html>

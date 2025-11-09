@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
-<title>Workers</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Workers</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
+
 <body>
-<h1>Workers</h1>
-<table>
-<tr>
-<th>Worker id</th>
-<th>First name</th>
-<th>Last name</th>
-<th>Phone number</th>
-<th>Email</th>
-<th>Address</th>
-<th>Role</th>
-<th>Cars</th>
-</tr>
-<tr th:each="worker : ${workers}">
-<td th:text="${worker.workerid}"></td>
-<td th:text="${worker.firstname}"></td>
-<td th:text="${worker.lastname}"></td>
-<td th:text="${worker.phonenumber}"></td>
-<td th:text="${worker.email}"></td>
-<td th:text="${worker.address}"></td>
-<td th:text="${worker.role}"></td>
-<td th:text="${worker.cars}"></td>
-<button>Delete worker</button>
-</tr>
-</table>
+    <h1>Workers</h1>
+    <table>
+        <tr>
+            <th>Worker id</th>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Phone number</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Role</th>
+            <th>Cars</th>
+        </tr>
+        <tr th:each="worker : ${workers}">
+            <td th:text="${worker.workerid}"></td>
+            <td th:text="${worker.firstname}"></td>
+            <td th:text="${worker.lastname}"></td>
+            <td th:text="${worker.phonenumber}"></td>
+            <td th:text="${worker.email}"></td>
+            <td th:text="${worker.address}"></td>
+            <td th:text="${worker.role}"></td>
+            <td th:text="${worker.cars}"></td>
+            <button>Delete worker</button>
+        </tr>
+    </table>
 </body>
+
 </html>

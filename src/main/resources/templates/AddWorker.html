@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
-<title>Add worker</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Add worker</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
+
 <body>
-<h1>Add worker</h1>
-<form method="post" action="#" th:action="@{/saveworker}" th:object=${worker}>
-<p>Set worker id <input type="text" th:field="${worker.workerid}"/></p>
-<p>Set first name <input type="text" th:field="${worker.firstname}"/></p>
-<p>Set last name <input type="text" th:field="${worker.lastname}"/></p>
-<p>Set phone number <input type="text" th:field="${worker.phonenumber}"/></p>
-<p>Set email <input type="text" th:field="${worker.email}"/></p>
-<p>Set address <input type="text" th:field="${worker.address}"/></p>
-<p>Set role <input type="text" th:field="${worker.role}"/></p>
-<p>Set cars <input type="text" th:field="${worker.cars}"/></p>
-<input type="submit" value="Add worker" />
-</form>
+    <h1>Add worker</h1>
+    <form method="post" action="#" th:action="@{/saveworker}" th:object=${worker}>
+        <p>Set worker id <input type="text" th:field="${worker.workerid}" /></p>
+        <p>Set first name <input type="text" th:field="${worker.firstname}" /></p>
+        <p>Set last name <input type="text" th:field="${worker.lastname}" /></p>
+        <p>Set phone number <input type="text" th:field="${worker.phonenumber}" /></p>
+        <p>Set email <input type="text" th:field="${worker.email}" /></p>
+        <p>Set address <input type="text" th:field="${worker.address}" /></p>
+        <p>Set role <input type="text" th:field="${worker.role}" /></p>
+        <p>Set cars <input type="text" th:field="${worker.cars}" /></p>
+        <input type="submit" value="Add worker" />
+    </form>
 </body>
+
 </html>
